@@ -1,0 +1,691 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --roboto: "Roboto Condensed", sans-serif;
+  --bebas: "Bebas Neue", sans-serif;
+  --popin: "Poppins", sans-serif;
+  --maincolor: #deaa40;
+  --secondcolor: #364951;
+}
+body {
+  font-family: var(--popin);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+b,
+strong {
+  font-weight: 700;
+  color: var(--secondcolor);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  /* font-family: "Poppins", sans-serif; */
+}
+p {
+  color: #606060;
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px 0;
+}
+.small-heading {
+  color: #3649518c;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 16px 0;
+  display: block;
+}
+
+.web-head {
+  font-weight: 600;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: var(--secondcolor);
+  margin: 0;
+}
+/* ==========================
+banner slider css starts
+============================= */
+a.banner-button {
+  background: var(--maincolor);
+  color: #fff;
+  padding: 10px 5px 10px 40px;
+  /* width: 35%; */
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.banner-btn a i {
+  background: #fff;
+  padding: 14px 16px;
+  border-radius: 100%;
+  color: var(--secondcolor);
+  rotate: 35deg;
+  font-size: 14px;
+  margin-left: 15px;
+}
+.banner-btn {
+  display: flex;
+  align-items: center;
+}
+
+.banner-btn .btn-dt {
+  padding-left: 40px;
+}
+section.banner-slider {
+  padding: 6rem 0;
+  background: #f5e9d2;
+}
+.banner-text strong {
+  display: block;
+}
+
+.banner-text span {
+  color: var(--maincolor);
+}
+/* ==========================
+ABOUT US CSS STARTS
+============================= */
+section.abt-us,
+section.video-context {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.abt-us-context {
+  padding: 0 3rem;
+}
+
+.abt-us-context p {
+  padding-top: 0;
+}
+
+.abt-us-context strong {
+  color: #495057;
+}
+.abt-three-btn {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-box {
+  background: #f9f4e4;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.btn-box i {
+  font-size: 27px;
+  margin-right: 9px;
+  color: var(--secondcolor);
+}
+
+.btn-dt span {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  /* letter-spacing: 1px; */
+  color: var(--secondcolor);
+  text-align: left;
+}
+
+.btn-dt a {
+  color: var(--secondcolor);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.btn-box:nth-child(2) {
+  background: var(--maincolor);
+  color: #fff;
+}
+
+.btn-box:nth-child(2) i {
+  color: #fff;
+}
+
+.btn-box:nth-child(3) {
+  background: transparent;
+  border: 2px solid var(--maincolor);
+  color: var(--maincolor);
+}
+
+.btn-box:nth-child(3) i,
+.btn-box:nth-child(3) a,
+.btn-box:nth-child(3) span {
+  color: var(--maincolor);
+}
+section.abt-us {
+  margin-bottom: 22%;
+}
+/* ==========================
+ABOUT US CSS end
+============================= */
+
+/* ======================
+video context css starts
+========================= */
+.vd-text {
+  text-align: left;
+}
+
+.video-cnt-dtl {
+  text-align: left;
+  padding-left: 2.5rem;
+  padding-top: 1rem;
+}
+
+.video-cnt-dtl a {
+  display: block;
+  font-size: 16px;
+  color: var(--secondcolor);
+  font-weight: 600;
+}
+
+.ovl-btn a {
+  background: var(--secondcolor);
+  color: #fff;
+  padding: 4px 4px 4px 14px;
+  /* width: 35%; */
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.ovl-btn {
+  display: flex;
+}
+
+.ovl-btn i {
+  background: #fff;
+  padding: 10px 12px;
+  border-radius: 100%;
+  color: var(--secondcolor);
+  rotate: 35deg;
+  font-size: 14px;
+  margin-left: 4px;
+}
+/* ======================
+video context css starts
+========================= */
+section.video-context .web-head {
+  text-transform: none;
+}
+
+section.video-context {
+  padding: 4rem 0;
+  background: #f5e9d2;
+}
+.btn_play {
+  position: relative;
+  display: inline-block;
+}
+.btn_play::after {
+  content: "";
+  position: absolute;
+  right: -27px;
+  top: 50%;
+  background: url(../img/arrow_golden.svg) no-repeat;
+  background-size: cover;
+  width: 23px;
+  height: 11px;
+  transform: translate(0, -50%);
+}
+.btn_play span {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  position: relative;
+  background: #fff;
+  border-radius: 100%;
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.btn_play span::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  background: url(../img/circular_text.svg) no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 90%;
+  -webkit-animation: rotating 5s linear infinite;
+  -moz-animation: rotating 5s linear infinite;
+  -ms-animation: rotating 5s linear infinite;
+  -o-animation: rotating 5s linear infinite;
+  animation: rotating 5s linear infinite;
+}
+.btn_play span::after {
+  content: "";
+  position: absolute;
+  left: 53%;
+  top: 50%;
+  background: url(../img/icon_play.svg) no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 18px;
+  height: 24px;
+  transform: translate(-50%, -50%);
+}
+.video-box {
+  position: relative;
+  margin-top: -30%;
+  margin-bottom: 1rem;
+}
+
+.item_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.video-box img {
+  width: 100%;
+}
+
+.video-box-text {
+  padding: 0 2rem;
+}
+/* ======================
+video context css end
+========================= */
+
+/* ======================
+about our companies css starts
+========================= */
+
+.cmpy-img-wrapper {
+  position: relative;
+}
+
+.cmpy-img-wrapper i {
+  background: var(--maincolor);
+  padding: 20px 22px;
+  border-radius: 100%;
+  color: var(--secondcolor);
+  rotate: 35deg;
+  font-size: 14px;
+  margin-left: 4px;
+  color: #fff;
+  position: absolute;
+  right: 4%;
+  bottom: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cmpy-box-wrap strong {
+  font-size: 25px;
+  margin-top: 10px;
+  display: block;
+  line-height: 32px;
+}
+
+.cmpy-box-wrap a {
+  color: var(--maincolor);
+  font-weight: 600;
+}
+
+section.abt-companies {
+  padding: 3rem 0;
+}
+
+.cmpy-img-wrapper img {
+  width: 100%;
+  height: 250px;
+}
+/* ======================
+about our companies css end
+========================= */
+
+/* ======================
+welcome to gumax css starts
+========================= */
+section.wlcm-gumax {
+  padding: 4rem 0;
+  background: #f5e9d2;
+}
+
+.wlcm-text strong {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 8px;
+}
+
+.wlcm-text span {
+  font-style: italic;
+  font-size: 18px;
+  padding: 8px 30px;
+  display: block;
+  padding-left: 0;
+}
+
+.wlcm-text p {
+  margin: 0;
+  padding: 0;
+}
+
+.wlcm-btn a {
+  background: var(--maincolor);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.wlcm-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.wlcm-img {
+  /* height: 450px; */
+  position: relative;
+}
+
+.display-box {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.wlcm-img i {
+  background: var(--maincolor);
+  padding: 35px 38px;
+  border-radius: 100%;
+  color: var(--secondcolor);
+  rotate: 35deg;
+  font-size: 30px;
+  margin-left: 4px;
+  color: #fff;
+  position: absolute;
+  right: 4%;
+  top: 4%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* ======================
+welcome to gumax css End
+========================= */
+
+/* ===============================
+company blog css starts
+================================== */
+section.blog .company-boxes span {
+  padding-top: 10px;
+  display: block;
+  color: #6c757d;
+  font-size: 16px;
+}
+.brand-slider {
+  padding: 4.5rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.brand-slider .item img {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+
+.brand-owl-slider button.owl-prev span,
+.brand-owl-slider button.owl-next span {
+  /* background: #e9831d; */
+  padding: 5px 15px;
+  border-radius: 100%;
+  color: #222;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  position: absolute;
+}
+
+.brand-owl-slider button.owl-prev span {
+  top: 50%;
+  left: -5%;
+}
+
+.brand-owl-slider button.owl-next span {
+  top: 50%;
+  right: -5%;
+}
+
+.owl-carousel.owl-theme.brand-owl-slider.owl-loaded.owl-drag {
+  display: flex;
+  align-items: center;
+}
+.brand-owl-slider .item {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* ====================================
+subscribe us css starts 
+======================================*/
+section.subs-us {
+  padding: 4rem 0;
+  background: linear-gradient(rgb(31 45 48 / 58%), rgb(31 45 48 / 63%)),
+    url(../img/subs-banner.png);
+  /* text-align: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+section.subs-us strong {
+  color: #fff;
+  font-size: 28px;
+}
+
+section.subs-us p {
+  color: #f7f7f7;
+}
+
+.subs-btn input {
+  border-radius: 30px !important;
+  padding: 25px 30px;
+  border: 1px solid #fff;
+  background: transparent;
+  width: 40%;
+  padding-left: 50px;
+  color: #fff;
+}
+.subs-btn:placeholder {
+  color: #fff !important;
+}
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  border-color: var(--maincolor) !important;
+  box-shadow: 0 0 5px rgb(222 170 64 / 54%) !important;
+  background: transparent;
+}
+.input-group {
+  width: 40%;
+  position: relative;
+  margin-right: 10px;
+}
+
+.subs-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.input-group i {
+  font-size: 20px;
+  color: #f7f7f7;
+  position: absolute;
+  top: 32%;
+  left: 3%;
+}
+
+.subs-btn.wlcm-btn a {
+  padding: 15px 40px;
+  background: #fff;
+  color: var(--maincolor);
+  font-weight: 600;
+}
+
+/* =========================================
+footer css starts
+=========================================== */
+footer.main-footer {
+  background: #33415c;
+  padding-top: 4rem;
+}
+
+footer.main-footer p {
+  color: #fff;
+  font-size: 16px;
+  padding: 0;
+  padding-bottom: 1.5rem;
+}
+
+.footer-h {
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 1rem;
+}
+
+.footer-box a {
+  color: #fff;
+  display: block;
+  padding-bottom: 1rem;
+}
+ul.social-links li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 0 10px;
+}
+
+ul.social-links {
+  display: flex;
+}
+
+ul.social-links li i {
+  font-size: 25px;
+}
+
+.footer-context-dwn {
+  border-top: 1px solid #d7d7d7;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-context-dwn ul {
+  display: flex;
+}
+
+.footer-context-dwn ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.footer-context-dwn ul li a {
+  color: #fff;
+}
+.footer-context {
+  padding-bottom: 2rem;
+}
+.footer-box {
+  padding-right: 3rem;
+}
+.owl-carousel.owl-theme.main-banner-slider .item img {
+  width: 100%;
+  /* height: 400px; */
+}
+
+.banner-text {
+  padding: 2rem 0;
+  padding-right: 2rem;
+}
+
+.owl-carousel.owl-theme.main-banner-slider {
+  position: relative;
+}
+
+.owl-carousel.owl-theme.main-banner-slider .owl-dots button.owl-dot {
+  display: block;
+  margin: 10px 0;
+}
+
+.owl-carousel.owl-theme.main-banner-slider .owl-dots {
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+
+.owl-carousel.owl-theme.main-banner-slider .owl-dots button.owl-dot span {
+  border: 2px solid var(--maincolor);
+  background: transparent;
+}
+
+.owl-carousel.owl-theme.main-banner-slider
+  .owl-dots
+  button.owl-dot.active
+  span {
+  background: var(--maincolor);
+}
